@@ -19,6 +19,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
   projectName: 'allviaCL_VCR_doc', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   trailingSlash: true,
 
   onBrokenLinks: 'warn',
@@ -30,11 +31,16 @@ const config: Config = {
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko', 'en'],
+    path: 'i18n',
     localeConfigs: {
       ko: {
+        label: '한국어',
+        direction: 'ltr',
         htmlLang: 'ko-KR',
       },
       en: {
+        label: 'English',
+        direction: 'ltr',
         htmlLang: 'en-US',
       },
     },
