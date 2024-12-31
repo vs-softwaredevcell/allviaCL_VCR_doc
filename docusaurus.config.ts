@@ -19,9 +19,9 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
   projectName: 'allviaCL_VCR_doc', // Usually your repo name.
-  trailingSlash: false,
+  trailingSlash: true,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -30,6 +30,14 @@ const config: Config = {
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko', 'en'],
+    localeConfigs: {
+      ko: {
+        htmlLang: 'ko-KR',
+      },
+      en: {
+        htmlLang: 'en-US',
+      },
+    },
   },
 
   presets: [
@@ -39,7 +47,6 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/vs-softwaredevcell/allviaCL_VCR_doc/tree/main/',
         },
         blog: false,
         theme: {
@@ -60,28 +67,10 @@ const config: Config = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          type: 'docSidebar',
+          sidebarId: 'docs',
           position: 'left',
-          label: '홈',
-        },
-        {
-          type: 'doc',
-          docId: 'getting-started/introduction',
-          position: 'left',
-          label: '시작하기',
-        },
-        {
-          type: 'doc',
-          docId: 'architecture',
-          position: 'left',
-          label: '아키텍처',
-        },
-        {
-          type: 'doc',
-          docId: 'api',
-          position: 'left',
-          label: 'API',
+          label: '문서',
         },
         {
           type: 'localeDropdown',
