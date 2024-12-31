@@ -19,6 +19,10 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '시작하기',
       collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'getting-started/introduction',
+      },
       items: [
         'getting-started/introduction',
         'getting-started/installation',

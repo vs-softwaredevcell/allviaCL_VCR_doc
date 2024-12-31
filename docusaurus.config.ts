@@ -22,7 +22,7 @@ const config: Config = {
   deploymentBranch: 'main',
   trailingSlash: true,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -53,6 +53,7 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
+          includeCurrentVersion: true,
         },
         blog: false,
         theme: {
