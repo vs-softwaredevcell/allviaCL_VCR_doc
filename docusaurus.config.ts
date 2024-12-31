@@ -19,7 +19,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
   projectName: 'allviaCL_VCR_doc', // Usually your repo name.
-  deploymentBranch: 'main',
+  deploymentBranch: 'gh-pages',
   trailingSlash: true,
 
   onBrokenLinks: 'warn',
@@ -53,7 +53,6 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
-          includeCurrentVersion: true,
         },
         blog: false,
         theme: {
@@ -74,10 +73,28 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docs',
+          type: 'doc',
+          docId: 'intro',
           position: 'left',
-          label: '문서',
+          label: '홈',
+        },
+        {
+          type: 'doc',
+          docId: 'getting-started/introduction',
+          position: 'left',
+          label: '시작하기',
+        },
+        {
+          type: 'doc',
+          docId: 'architecture',
+          position: 'left',
+          label: '아키텍처',
+        },
+        {
+          type: 'doc',
+          docId: 'api',
+          position: 'left',
+          label: 'API',
         },
         {
           type: 'localeDropdown',
