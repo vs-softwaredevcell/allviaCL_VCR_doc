@@ -13,12 +13,12 @@ const config: Config = {
   url: 'https://vs-softwaredevcell.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/AllviaCL-VCR_doc/',
+  baseUrl: '/allviaCL_VCR_doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
-  projectName: 'AllviaCL-VCR_doc', // Usually your repo name.
+  projectName: 'allviaCL_VCR_doc', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -39,6 +39,7 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
+          editUrl: 'https://github.com/vs-softwaredevcell/allviaCL_VCR_doc/tree/main/',
         },
         blog: false,
         theme: {
@@ -87,7 +88,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/allviacl/AllviaCL-VCR_doc',
+          href: 'https://github.com/vs-softwaredevcell/allviaCL_VCR_doc',
           label: 'GitHub',
           position: 'right',
         },
