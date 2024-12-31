@@ -19,10 +19,10 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
   projectName: 'allviaCL_VCR_doc', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'main',
   trailingSlash: true,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
