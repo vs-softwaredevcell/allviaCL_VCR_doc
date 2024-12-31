@@ -5,45 +5,30 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'AllviaCL-VCR Documentation',
-  tagline: 'AllviaCL-VCR Technical Documentation',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://vs-softwaredevcell.github.io',
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/allviaCL_VCR_doc/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
-  projectName: 'allviaCL_VCR_doc', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
-  trailingSlash: true,
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko', 'en'],
-    path: 'i18n',
-    localeConfigs: {
-      ko: {
-        label: '한국어',
-        direction: 'ltr',
-        htmlLang: 'ko-KR',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-      },
-    },
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -51,10 +36,27 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.ts'),
-          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -64,58 +66,72 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/social-card.jpg',
+    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'AllviaCL-VCR',
+      title: 'My Site',
       logo: {
-        alt: 'AllviaCL Logo',
+        alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '홈',
+          label: 'Tutorial',
         },
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          type: 'doc',
-          docId: 'getting-started/introduction',
-          position: 'left',
-          label: '시작하기',
-        },
-        {
-          type: 'doc',
-          docId: 'architecture',
-          position: 'left',
-          label: '아키텍처',
-        },
-        {
-          type: 'doc',
-          docId: 'api',
-          position: 'left',
-          label: 'API',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/vs-softwaredevcell/allviaCL_VCR_doc',
+          href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
-    docs: {
-      sidebar: {
-        hideable: true,
-        autoCollapseCategories: true,
-      },
-    },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} AllviaCL. Built with Docusaurus.`,
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Tutorial',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'X',
+              href: 'https://x.com/docusaurus',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/facebook/docusaurus',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

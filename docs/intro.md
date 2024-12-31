@@ -1,18 +1,47 @@
 ---
-slug: /
 sidebar_position: 1
 ---
 
-# AllviaCL-VCR 문서
+# Tutorial Intro
 
-AllviaCL-VCR에 오신 것을 환영합니다. 이 문서는 AllviaCL-VCR의 기술 문서입니다.
+Let's discover **Docusaurus in less than 5 minutes**.
 
-## 빠른 시작
+## Getting Started
 
-- [소개](getting-started/introduction.md)를 통해 AllviaCL-VCR에 대해 알아보세요.
-- [설치 가이드](getting-started/installation.md)를 따라 AllviaCL-VCR을 설치하세요.
+Get started by **creating a new site**.
 
-## 주요 섹션
+Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-- [아키텍처](architecture.md) - 시스템 아키텍처와 설계 원칙
-- [API](api.md) - API 참조 문서
+### What you'll need
+
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+
+## Generate a new site
+
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash
+npm init docusaurus@latest my-website classic
+```
+
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+
+The command also installs all necessary dependencies you need to run Docusaurus.
+
+## Start your site
+
+Run the development server:
+
+```bash
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
