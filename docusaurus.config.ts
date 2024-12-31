@@ -47,6 +47,7 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        pages: false, // Disable pages plugin to prevent route conflicts
       } satisfies Preset.Options,
     ],
   ],
@@ -84,6 +85,11 @@ const config: Config = {
           docId: 'api',
           position: 'left',
           label: 'API',
+        },
+        {
+          href: 'https://github.com/vs-softwaredevcell/allviaCL_VCR_doc',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
