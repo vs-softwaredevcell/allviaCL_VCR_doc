@@ -37,9 +37,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/allviacl/AllviaCL-VCR_doc/tree/main/',
         },
         blog: false,
         theme: {
@@ -54,12 +53,34 @@ const config: Config = {
     image: 'img/social-card.jpg',
     navbar: {
       title: 'AllviaCL-VCR',
+      logo: {
+        alt: 'AllviaCL Logo',
+        src: 'img/logo.svg',
+      },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'intro',
           position: 'left',
           label: '홈',
+        },
+        {
+          type: 'doc',
+          docId: 'getting-started/introduction',
+          position: 'left',
+          label: '시작하기',
+        },
+        {
+          type: 'doc',
+          docId: 'architecture',
+          position: 'left',
+          label: '아키텍처',
+        },
+        {
+          type: 'doc',
+          docId: 'api',
+          position: 'left',
+          label: 'API',
         },
         {
           type: 'localeDropdown',
@@ -71,6 +92,12 @@ const config: Config = {
           position: 'right',
         },
       ],
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
     },
     footer: {
       style: 'dark',

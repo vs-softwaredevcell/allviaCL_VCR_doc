@@ -13,30 +13,19 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
-  tutorialSidebar: [
-    {
-      type: 'doc',
-      id: 'intro',
-      label: '홈',
-    },
+  docs: [
+    'intro',
     {
       type: 'category',
       label: '시작하기',
+      collapsed: false,
       items: [
         'getting-started/introduction',
         'getting-started/installation',
       ],
     },
-    {
-      type: 'doc',
-      id: 'architecture',
-      label: '아키텍처',
-    },
-    {
-      type: 'doc',
-      id: 'api',
-      label: 'API',
-    },
+    'architecture',
+    'api',
   ],
 };
 
