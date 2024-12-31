@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkallvia_cl_vcr_doc=self.webpackChunkallvia_cl_vcr_doc||[]).push([[779],{2785:l=>{l.exports=JSON.parse('{"metadata":{"permalink":"/allviaCL_VCR_doc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
