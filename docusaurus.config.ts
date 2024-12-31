@@ -62,26 +62,26 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'home',
           position: 'left',
           label: '홈',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'getting-started/introduction',
           position: 'left',
           label: '시작하기',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'architecture',
           position: 'left',
           label: '아키텍처',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'api',
           position: 'left',
           label: 'API',
         },
@@ -95,15 +95,15 @@ const config: Config = {
           items: [
             {
               label: '시작하기',
-              to: '/docs/getting-started/introduction',
+              to: '/getting-started/introduction',
             },
             {
               label: '아키텍처',
-              to: '/docs/architecture',
+              to: '/architecture',
             },
             {
               label: 'API',
-              to: '/docs/api',
+              to: '/api',
             },
           ],
         },

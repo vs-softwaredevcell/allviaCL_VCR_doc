@@ -17,7 +17,7 @@ VCR(Virtual Control Room)은 allviaCL의 핵심 제어 시스템입니다. 이 �
 
 ## 시작하기
 
-VCR을 시작하려면 [소개](getting-started/introduction) 문서를 참조하세요.
+VCR을 시작하려면 [소개](/getting-started/introduction) 문서를 참조하세요.
 
 ## 도움이 필요하신가요?
 
