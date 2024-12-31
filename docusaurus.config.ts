@@ -10,14 +10,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://allviacl.github.io',
+  url: 'https://vs-softwaredevcell.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/AllviaCL-VCR_doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'allviacl', // Usually your GitHub org/user name.
+  organizationName: 'vs-softwaredevcell', // Usually your GitHub org/user name.
   projectName: 'AllviaCL-VCR_doc', // Usually your repo name.
   trailingSlash: false,
 
